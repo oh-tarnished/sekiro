@@ -1,7 +1,7 @@
 {
-    "go.goroot": "${workspaceFolder}/bazel-${workspaceFolderBasename}/external/rules_go~0.43.0~go_sdk~go_default_sdk",
+    "go.goroot": "${workspaceFolder}/bazel-${workspaceFolderBasename}/external/rules_go~0.43.0~go_sdk~sekiro__download_0",
     "go.toolsEnvVars": {
-        "GOPACKAGESDRIVER": "${workspaceFolder}/tools/gopackagesdriver.sh"
+        "GOPACKAGESDRIVER": "${workspaceFolder}/tools/gopackagedriver.sh"
     },
     "go.enableCodeLens": {
         "runtest": false

@@ -4,10 +4,11 @@ go_library(
     name = "cmd",
     srcs = [
         "config.go",
+        "configure.go",
         "root.go",
         "setup.go",
     ],
     importpath = "dev.machanirobotics/sekiro/cmd",
     visibility = ["//visibility:public"],
-    deps = ["@com_github_spf13_cobra//:go_default_library"],
+    deps = ["@com_github_spf13_cobra//:cobra"],
 )

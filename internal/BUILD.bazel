@@ -3,9 +3,9 @@ load("@rules_go//go:def.bzl", "go_library")
 go_library(
     name = "internal",
     srcs = [
-        "config.go",
-        "config_generator.go",
-        "config_verify.go",
+        "file.go",
+        "file_generator.go",
+        "file_verify.go",
         "project_init.go",
         "project_setup.go",
     ],

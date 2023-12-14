@@ -1,0 +1,12 @@
+load("@rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "bubbletea",
+    srcs = [
+        "bubbletea.go",
+        "model.go",
+        "view.go",
+    ],
+    importpath = "dev.machanirobotics/sekiro/internal/bubbletea",
+    visibility = ["//:__subpackages__"],
+)

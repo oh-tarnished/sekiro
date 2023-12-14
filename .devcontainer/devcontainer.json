@@ -1,11 +1,11 @@
 {
-    "name": "droid_lab",
+    "name": "sekiro",
     "build": {
         "dockerfile": "Dockerfile"
     },
     "mounts": [
         {
-            "source": "droid_lab-build-cache",
+            "source": "sekiro-build-cache",
             "target": "/home/developer/.cache",
             "type": "volume"
         },
@@ -35,6 +35,7 @@
                 "BazelBuild.vscode-bazel",
                 "eamodio.gitlens",
                 "ms-python.python",
+                "golang.go",
                 "tal7aouy.icons",
                 "StackBuild.bazel-stack-vscode"
             ]

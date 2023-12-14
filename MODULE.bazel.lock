@@ -1,6 +1,6 @@
 {
   "lockFileVersion": 3,
-  "moduleFileHash": "8f31486f22e8d872283d991e64a4c8b81f9e6b6d9bf07191da24d458d1dc6e67",
+  "moduleFileHash": "1e2f9c63fb7325f1ff177a96d13fe35e8263d24be004b08fd38c1e1c120d4fe9",
   "flags": {
     "cmdRegistries": [
       "https://bcr.bazel.build/"
@@ -32,7 +32,7 @@
           "usingModule": "<root>",
           "location": {
             "file": "@@//:MODULE.bazel",
-            "line": 14,
+            "line": 12,
             "column": 21
           },
           "imports": {
@@ -48,7 +48,7 @@
               "devDependency": false,
               "location": {
                 "file": "@@//:MODULE.bazel",
-                "line": 15,
+                "line": 13,
                 "column": 15
               }
             }
@@ -62,7 +62,7 @@
           "usingModule": "<root>",
           "location": {
             "file": "@@//:MODULE.bazel",
-            "line": 23,
+            "line": 21,
             "column": 23
           },
           "imports": {},
@@ -76,7 +76,7 @@
               "devDependency": false,
               "location": {
                 "file": "@@//:MODULE.bazel",
-                "line": 24,
+                "line": 22,
                 "column": 16
               }
             }
@@ -90,7 +90,7 @@
           "usingModule": "<root>",
           "location": {
             "file": "@@//:MODULE.bazel",
-            "line": 26,
+            "line": 24,
             "column": 24
           },
           "imports": {
@@ -106,7 +106,7 @@
               "devDependency": false,
               "location": {
                 "file": "@@//:MODULE.bazel",
-                "line": 27,
+                "line": 25,
                 "column": 18
               }
             }
@@ -1361,7 +1361,7 @@
         "accumulatedFileDigests": {
           "@@rules_go~0.43.0//:go.mod": "58f9901703af412a1a8771d283721ef391c0ca1cc6ef3c141334311965535676",
           "@@gazelle~0.34.0//:go.mod": "9ae159a385b2f244bbe964b9f91dbea6e7bd534e0b22e846655f241c65de2c49",
-          "@@//:go.mod": "1c6de831615992288f50520b9e32ec9b8381b769fe12462df0430fb6903957ee",
+          "@@//:go.mod": "6beab6ceeb44d2da4a8d7e026685aa767ebdd757a1326c83d17ad9f58640f223",
           "@@//:go.sum": "df686bf4750dcbc69fd14d1c87d8fcb1bb3aff59e9540f1b4b10b0f32b010c6a",
           "@@rules_go~0.43.0//:go.sum": "c6368ec1da45691f9148115d7317e740c3b32313b624b8f6545ef36b2ab4d781",
           "@@gazelle~0.34.0//:go.sum": "7469786f3930030c430969cedae951e6947cb40f4a563dac94a350659c0fedc4"
@@ -1664,8 +1664,8 @@
             "attributes": {
               "name": "gazelle~0.34.0~go_deps~bazel_gazelle_go_repository_config",
               "importpaths": {
-                "com_github_inconshreveable_mousetrap": "github.com/inconshreveable/mousetrap",
                 "com_github_spf13_cobra": "github.com/spf13/cobra",
+                "com_github_inconshreveable_mousetrap": "github.com/inconshreveable/mousetrap",
                 "com_github_spf13_pflag": "github.com/spf13/pflag",
                 "com_github_gogo_protobuf": "github.com/gogo/protobuf",
                 "com_github_golang_mock": "github.com/golang/mock",
@@ -1747,7 +1747,9 @@
           }
         },
         "moduleExtensionMetadata": {
-          "explicitRootModuleDirectDeps": [],
+          "explicitRootModuleDirectDeps": [
+            "com_github_spf13_cobra"
+          ],
           "explicitRootModuleDirectDevDeps": [],
           "useAllRepos": "NO"
         }
