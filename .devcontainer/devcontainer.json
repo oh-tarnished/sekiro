@@ -1,0 +1,45 @@
+{
+    "name": "droid_lab",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "mounts": [
+        {
+            "source": "droid_lab-build-cache",
+            "target": "/home/developer/.cache",
+            "type": "volume"
+        },
+        {
+            "source": "${localEnv:HOME}/.ssh",
+            "target": "/home/developer/.ssh",
+            "type": "bind"
+        },
+        {
+            "source": "${localEnv:HOME}/.aws",
+            "target": "/home/developer/.aws",
+            "type": "bind"
+        },
+        {
+            "source": "/var/run/docker.sock",
+            "target": "/var/run/docker.sock",
+            "type": "bind"
+        }
+    ],
+    "runArgs": [
+        "--net=host"
+    ],
+    "privileged": true,
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "BazelBuild.vscode-bazel",
+                "eamodio.gitlens",
+                "ms-python.python",
+                "tal7aouy.icons",
+                "StackBuild.bazel-stack-vscode"
+            ]
+        }
+    },
+    "postCreateCommand": "/bin/bash ./.devcontainer/postCreateCommand.sh",
+    "initializeCommand": "/bin/bash ./.devcontainer/initializeCommand.sh"
+}

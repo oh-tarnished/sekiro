@@ -1,0 +1,12 @@
+load("@rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "aws",
+    srcs = [
+        "bucket.go",
+        "download.go",
+        "secrets.go",
+    ],
+    importpath = "dev.machanirobotics/sekiro/internal/aws",
+    visibility = ["//:__subpackages__"],
+)

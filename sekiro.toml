@@ -1,0 +1,17 @@
+[project]
+name = "sekiro"
+version = "0.1.0"
+
+[support]
+hosts = ["linux", "darwin"]
+architectures = ["x86_64", "aarch64"]
+devcontainer = ["Dockerfile.serkio.dev", "Dockerfile.sekiro.prod"]
+
+[buildkite]
+enable_docker = false
+
+[credentials]
+s3_bucket = "s3://machanirobotics/projects"
+google = [".credentials/gcp_token.json", "default"]
+secrets = ".credentials/development.env"
+aws = [".credentials/aws_credentials", "default"]
